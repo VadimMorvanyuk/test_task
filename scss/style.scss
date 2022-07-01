@@ -1,0 +1,26 @@
+%btnNormal {
+    background: #75E169;
+    color: white;
+    border-radius: 5px;
+}
+%btnHover{
+    background: #75E169;
+    color: white;
+    border: solid 1px #67AEFC;
+    border-radius: 5px;
+}
+%btnActive{
+    background: #67AEFC;
+    color: white;
+    border-radius: 5px;
+}
+%formNorvmal{
+    background: white;
+    border: 1px solid #67AEFC;
+    border-radius: 5px;
+}
+%formActive{
+    background: white;
+    border: 2px solid #67AEFC;
+    border-radius: 5px;
+}
