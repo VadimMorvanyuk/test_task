@@ -33,6 +33,7 @@ a:hover{
 }
 body{
     font-family: 'Montserrat', sans-serif;
+    
 }
 %btnNormal {
     background: #75E169;
@@ -140,6 +141,7 @@ body{
             margin-bottom: 58px
         }
         .btnBlock2{
+            
             @extend %btnNormal;
             padding: 9px 49px;
             text-decoration: none;
@@ -361,6 +363,38 @@ body{
                         }
                     }
                 }
+            }
+        }
+    }
+}
+.block6{
+    background: url(../img/bg-block6.png);
+    .container-block6{
+        max-width: 1200px;
+    }
+    padding: 150px 0;
+    .block6-text{
+        h1{
+            color: #111111;
+            font-size: 32px;
+            font-weight: 800;
+        }
+        p{
+            color: #111111;
+            font-size: 18px;
+            font-weight: 400;
+            margin-top: 53px;
+            margin-bottom: 45px
+        }
+        .block6Btn{
+            @extend %btnNormal;
+            text-transform: uppercase;
+            padding: 17px 63px;
+            &:hover{
+                @extend %btnHover;
+            }
+            &:focus{
+                @extend %btnActive;
             }
         }
     }

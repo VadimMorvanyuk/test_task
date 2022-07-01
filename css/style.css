@@ -41,7 +41,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.block2 .block2-text .btnBlock2, .header .container .menu .btnHeader {
+.block6 .block6-text .block6Btn, .block2 .block2-text .btnBlock2, .header .container .menu .btnHeader {
   background: #75E169;
   color: white;
   border-radius: 5px;
@@ -50,7 +50,7 @@ body {
   transition: 0.5s;
 }
 
-.block2 .block2-text .btnBlock2:hover, .header .container .menu .btnHeader:hover {
+.block6 .block6-text .block6Btn:hover, .block2 .block2-text .btnBlock2:hover, .header .container .menu .btnHeader:hover {
   background: #75E169;
   color: white;
   border: solid 2px #67AEFC;
@@ -58,7 +58,7 @@ body {
   text-decoration: none;
 }
 
-.block2 .block2-text .btnBlock2:focus {
+.block6 .block6-text .block6Btn:focus, .block2 .block2-text .btnBlock2:focus {
   background: #67AEFC;
   color: white;
   border-radius: 5px;
@@ -347,4 +347,28 @@ body {
   color: #ffffff;
   font-size: 21px;
   font-weight: 700;
+}
+
+.block6 {
+  background: url(../img/bg-block6.png);
+  padding: 150px 0;
+}
+.block6 .container-block6 {
+  max-width: 1200px;
+}
+.block6 .block6-text h1 {
+  color: #111111;
+  font-size: 32px;
+  font-weight: 800;
+}
+.block6 .block6-text p {
+  color: #111111;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 53px;
+  margin-bottom: 45px;
+}
+.block6 .block6-text .block6Btn {
+  text-transform: uppercase;
+  padding: 17px 63px;
 }
