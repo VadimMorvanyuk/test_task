@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.header .container .menu .btnHeader {
+  background: #75E169;
+  color: white;
+  border-radius: 5px;
+  border: solid 2px #75E169;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.header .container .menu .btnHeader:hover {
+  background: #75E169;
+  color: white;
+  border: solid 2px #67AEFC;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.header {
+  background: #67AEFC;
+  padding: 18px 0;
+  font-family: "Montserrat", sans-serif;
+}
+.header .container {
+  max-width: 1170px;
+}
+.header .container .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  line-height: 45px;
+}
+.header .container .menu .sub-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+.header .container .menu .sub-menu .item-menu {
+  padding: 0 17px;
+}
+.header .container .menu .sub-menu .link-item {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 500;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.header .container .menu .sub-menu .link-item:hover {
+  text-decoration: none;
+  color: #0e8a00;
+}
+.header .container .menu .btnHeader {
+  padding: 9px 49px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.header .container .responsive-menu {
+  display: none;
+}

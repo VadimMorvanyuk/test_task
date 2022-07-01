@@ -1,13 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+ul[class],
+ol[class] {
+  padding: 0;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+ul[class],
+ol[class] {
+  list-style: none;
+}
+a:hover{
+    text-decoration: none;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 %btnNormal {
     background: #75E169;
     color: white;
     border-radius: 5px;
+    border: solid 2px #75E169;
+    transition: 0.5s;
 }
 %btnHover{
     background: #75E169;
     color: white;
-    border: solid 1px #67AEFC;
+    border: solid 2px #67AEFC;
     border-radius: 5px;
+    text-decoration: none;
 }
 %btnActive{
     background: #67AEFC;
@@ -24,3 +58,48 @@
     border: 2px solid #67AEFC;
     border-radius: 5px;
 }
+
+.header{
+    background: #67AEFC;
+    padding: 18px 0;
+    font-family: 'Montserrat', sans-serif;
+    .container{
+        max-width: 1170px;
+        .menu{
+            display: flex;
+            justify-content: space-around;
+            line-height: 45px;
+            .sub-menu{
+                display: flex;
+                list-style: none;
+                .item-menu{
+                    padding: 0 17px;
+                }
+                .link-item{
+                    font-size: 16px;
+                    color: #ffffff;
+                    font-weight: 500;
+                    transition: 0.4s;
+                    &:hover{
+                        text-decoration: none;
+                        color: #0e8a00;
+                    }
+                }
+            }
+            .btnHeader{
+                @extend %btnNormal;
+                padding: 9px 49px;
+                text-decoration: none;
+                text-transform: uppercase;
+                &:hover{
+                    @extend %btnHover;
+                }
+            }
+        }
+        .responsive-menu{
+            display: none;
+        }
+    }
+    
+}
+
