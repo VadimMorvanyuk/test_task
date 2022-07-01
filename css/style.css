@@ -70,6 +70,9 @@ body {
   padding: 18px 0;
   font-family: "Montserrat", sans-serif;
 }
+.header .index5 {
+  z-index: 5;
+}
 .header .container {
   max-width: 1170px;
 }
@@ -122,7 +125,7 @@ body {
   padding-top: 54px;
   padding-bottom: 41px;
   background-position: center;
-  background-repeat: round;
+  background-repeat: no-repeat;
 }
 .block2:before {
   content: url(../img/shape.png);
@@ -299,6 +302,27 @@ body {
   font-size: 32px;
   font-weight: 800;
 }
+.block5 .block5-title .owl-nav {
+  text-align: center;
+  margin-top: 83px;
+}
+.block5 .block5-title .owl-nav .owl-prev {
+  outline: none;
+  border: solid 2px #67AEFC;
+  border-radius: 15px;
+  margin-right: 30px;
+}
+.block5 .block5-title .owl-nav .owl-prev i {
+  padding: 22px 25px;
+}
+.block5 .block5-title .owl-nav .owl-next {
+  outline: none;
+  border: solid 2px #67AEFC;
+  border-radius: 15px;
+}
+.block5 .block5-title .owl-nav .owl-next i {
+  padding: 22px 25px;
+}
 .block5 .owl-carousel .item .item-img {
   position: relative;
   overflow: hidden;
@@ -369,6 +393,9 @@ body {
   margin-top: 53px;
   margin-bottom: 45px;
 }
+.block6 .block6-text img {
+  display: none;
+}
 .block6 .block6-text .block6Btn {
   text-transform: uppercase;
   padding: 17px 63px;
@@ -379,6 +406,9 @@ body {
   padding-bottom: 120px;
   background: #DAECFF;
   text-align: center;
+}
+.block7 .block7-img {
+  display: none;
 }
 .block7 h1 {
   color: #111111;
@@ -491,4 +521,54 @@ body {
   font-weight: 400;
   margin-top: 100px;
   text-align: center;
+}
+
+.sideNav {
+  display: block;
+  height: 70%;
+  -webkit-transform: translate(100%, 0);
+          transform: translate(100%, 0);
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background: #67AEFC;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  overflow: auto;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-top: 80px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sideNav a {
+  text-decoration: none;
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  line-height: 35px;
+  color: #ffffff;
+  display: inline-block;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  margin-top: 13px;
+  font-weight: 800;
+}
+.sideNav a:active {
+  color: white;
+}
+
+.sideNav.active {
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  opacity: 0.95;
 }

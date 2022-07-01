@@ -12,7 +12,7 @@ jQuery(document).ready(function () {
 		smartSpeed: 1000,
 		dotsSpeed: 1000,
 		loop: true,
-		nav: false,
+		nav: true,
 		navText: ['<i class="fa fa-regular fa-chevron-left"></i>', '<i class="fa fa-regular fa-chevron-right"></i>'],
 		dots: false,
 		mouseDrag: false,
@@ -22,7 +22,7 @@ jQuery(document).ready(function () {
 		responsiveClass: true,
 		responsive:{
 			0:{
-				items: 2,
+				items: 1,
 				dots: true,
 				nav: false,
 				mouseDrag: true,
@@ -30,21 +30,21 @@ jQuery(document).ready(function () {
 				smartSpeed: 1000
 			},
 			479:{
-				items: 2,
+				items: 1,
 				dots: true,
 				mouseDrag: true,
 				autoplay: false,
 				smartSpeed: 1000
 			},
 			767:{
-				items: 2,
+				items: 1,
 				dots: true,
 				mouseDrag: true,
 				autoplay: false,
 				smartSpeed: 1000
 			},
 			991:{
-				items: 2,
+				items: 1,
 				dots: true,
 				mouseDrag: true,
 				autoplay: false,
@@ -70,8 +70,8 @@ jQuery(document).ready(function () {
 		smartSpeed: 1000,
 		dotsSpeed: 1000,
 		loop: true,
-		nav: false,
-		navText: ['<i class="fa fa-regular fa-chevron-left"></i>', '<i class="fa fa-regular fa-chevron-right"></i>'],
+		nav: true,
+		navText: ['<i class="far fa-regular fa-chevron-left"></i>', '<i class="far fa-regular fa-chevron-right"></i>'],
 		dots: false,
 		mouseDrag: false,
 		margin: 30,
@@ -80,19 +80,21 @@ jQuery(document).ready(function () {
 		responsiveClass: true,
 		responsive:{
 			0:{
-				items: 2,
+				items: 1,
 				dots: true,
 				nav: false,
 				mouseDrag: false,
 				autoplay: false,
-				smartSpeed: 1000
+				smartSpeed: 1000,
+				navText: true
 			},
 			479:{
-				items: 2,
+				items: 1,
 				dots: true,
 				mouseDrag: false,
 				autoplay: false,
-				smartSpeed: 1000
+				smartSpeed: 1000,
+				
 			},
 			767:{
 				items: 2,
@@ -112,7 +114,7 @@ jQuery(document).ready(function () {
 				items: 2,
 				dots: true,
 				mouseDrag: false,
-				nav: true,
+				
 				autoplay: false
 			},
 			

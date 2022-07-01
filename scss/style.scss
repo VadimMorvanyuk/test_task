@@ -70,6 +70,9 @@ body{
     background: #67AEFC;
     padding: 18px 0;
     font-family: 'Montserrat', sans-serif;
+    .index5{
+        z-index: 5;
+    }
     .container{
         .logo{
             cursor: pointer;
@@ -82,6 +85,7 @@ body{
             .sub-menu{
                 display: flex;
                 list-style: none;
+                
                 .item-menu{
                     padding: 0 17px;
                 }
@@ -121,7 +125,7 @@ body{
     padding-top: 54px;
     padding-bottom: 41px;
     background-position: center;
-    background-repeat: round;
+    background-repeat: no-repeat;
     &:before{
         content: url(../img/shape.png);
    
@@ -314,6 +318,27 @@ body{
             font-size: 32px;
             font-weight: 800;
         }
+        .owl-nav{
+            text-align: center;
+            margin-top: 83px;
+            .owl-prev{
+                outline: none;
+                border: solid 2px #67AEFC;
+                border-radius: 15px;
+                margin-right: 30px;
+                i{
+                    padding: 22px 25px;
+                }
+            }
+            .owl-next{
+                outline: none;
+                border: solid 2px #67AEFC;
+                border-radius: 15px;
+                i{
+                    padding: 22px 25px;
+                }
+            }
+        }
     }
     .owl-carousel{
         .item{
@@ -387,6 +412,9 @@ body{
             margin-top: 53px;
             margin-bottom: 45px
         }
+        img{
+            display: none;
+        }
         .block6Btn{
             @extend %btnNormal;
             text-transform: uppercase;
@@ -406,6 +434,9 @@ body{
     padding-bottom: 120px;
     background: #DAECFF;
     text-align: center;
+    .block7-img{
+        display: none;
+    }
     h1{
         color: #111111;
         font-size: 32px;
@@ -521,4 +552,44 @@ body{
         text-align: center;
     }
 }
+.sideNav{
+    display: block;
+    height: 70%;
+    transform: translate(100%, 0);
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background: #67AEFC;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    overflow: auto;
+    transition: 0.5s;
+    padding-top: 80px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .sideNav a{
+    text-decoration: none;
+    font-size: 25px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+    line-height: 35px;
+    color: #ffffff;
+    display: inline-block;
+    transition: 0.5s ease-in-out;
+    margin-top: 13px;
+    font-weight: 800; 
+    &:active{
+        color: white;
+    } 
+}
+.sideNav.active{
+    transform: translate(0px, 0px);
+    opacity: 0.95;
+}
+
 
