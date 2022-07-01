@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 ul[class],
 ol[class] {
@@ -51,6 +52,12 @@ body {
   text-decoration: none;
 }
 
+.block2 .block2-text .btnBlock2:focus {
+  background: #67AEFC;
+  color: white;
+  border-radius: 5px;
+}
+
 .header {
   background: #67AEFC;
   padding: 18px 0;
@@ -92,6 +99,10 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
+.header .container .menu .btnHeader:focus {
+  background: white;
+  color: #67AEFC;
+}
 .header .container .responsive-menu {
   display: none;
 }
@@ -124,4 +135,87 @@ body {
   padding: 9px 49px;
   text-decoration: none;
   text-transform: uppercase;
+}
+.block3 {
+  padding: 120px 0;
+  background: url(../img/bg-block3.png);
+}
+.block3 .container {
+  max-width: 1170px;
+}
+.block3 .container .block3-title {
+  text-align: center;
+  margin-bottom: 80px;
+}
+.block3 .container .block3-title h1 {
+  color: #111111;
+  font-size: 32px;
+  font-weight: 800;
+}
+.block3 .container .accordion {
+  background-color: #ffffff;
+  color: black;
+  cursor: pointer;
+  padding: 16px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+.block3 .container .accordion:before {
+  content: "";
+  background: #75E169;
+  font-size: 18px;
+  font-weight: bold;
+  float: left;
+  height: 20px;
+  border-radius: 14px;
+  width: 20px;
+  margin-left: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: relative;
+  left: -11px;
+  top: 5px;
+}
+.block3 .container .accordion.active:before {
+  content: "";
+  background: #67AEFC;
+  font-size: 18px;
+  font-weight: bold;
+  float: left;
+  height: 20px;
+  border-radius: 14px;
+  width: 20px;
+  margin-left: 5px;
+}
+.block3 .container .accordion:after {
+  content: "⌄";
+  color: #363636;
+  font-size: 18px;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+.block3 .container .active:after {
+  content: "⌃";
+}
+.block3 .container .panel {
+  padding: 0 50px;
+  color: #212121;
+  background-color: #fff;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.3s ease-out;
+  transition: max-height 0.3s ease-out;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-bottom: 10px;
 }

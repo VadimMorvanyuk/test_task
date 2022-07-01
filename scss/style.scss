@@ -94,6 +94,10 @@ body{
                 &:hover{
                     @extend %btnHover;
                 }
+                &:focus{
+                    background: white;
+                    color: #67AEFC;
+                }
             }
         }
         .responsive-menu{
@@ -135,6 +139,100 @@ body{
             &:hover{
                 @extend %btnHover;
             }
+            &:focus{
+                @extend %btnActive;
+            }
         }
     }
 }
+.block3{
+    padding: 120px 0;
+    background: url(../img/bg-block3.png);
+    .container{
+        max-width: 1170px;
+        .block3-title{
+            text-align: center;
+            margin-bottom: 80px;
+            h1{
+                color: #111111;
+                font-size: 32px;
+                font-weight: 800;
+            }
+        }
+        .accordion {
+            background-color: #ffffff;
+            color: black;
+            cursor: pointer;
+            padding: 16px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 18px;
+            transition: 0.5s;
+            
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            padding-right: 25px;
+            padding-left: 25px;
+        }
+        .accordion:before{
+            content: "";
+            background: #75E169;
+            font-size: 18px;
+            font-weight: bold;
+            float: left;
+            height: 20px;
+            border-radius: 14px;
+            width: 20px;
+            margin-left: 5px;
+            transition: 0.5s;
+            position: relative;
+            left: -11px;
+            top: 5px;
+        }
+        .accordion.active:before{
+            content: "";
+            background: #67AEFC;
+            font-size: 18px;
+            font-weight: bold;
+            float: left;
+            height: 20px;
+            border-radius: 14px;
+            width: 20px;
+            margin-left: 5px;
+        }
+        
+        
+        
+        .accordion:after {
+            content: '\2304';
+            color: rgb(54, 54, 54);
+          font-size: 18px;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+        
+        .active:after {
+            content: "\2303";
+        }
+        
+        .panel {
+            padding: 0 50px;
+          color: #212121;
+            background-color: #fff;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            margin-bottom: 10px;
+            p{
+                
+            }
+        }
+    }
+    
+}
+
