@@ -102,4 +102,39 @@ body{
     }
     
 }
-
+.block2{
+    background: url(../img/bg-block2.png);
+    padding-top: 54px;
+    padding-bottom: 41px;
+    background-position: center;
+    background-repeat: round;
+    &:before{
+        content: url(../img/shape.png);
+   
+    left: 256px;
+    position: relative;
+    }
+    .block2-text{
+        h1{
+            color: #484848;
+            font-size: 50px;
+            font-weight: 900;
+        }
+        p{
+            color: #000000;
+            font-size: 16px;
+            font-weight: 400;
+            margin-top: 20px;
+            margin-bottom: 58px
+        }
+        .btnBlock2{
+            @extend %btnNormal;
+            padding: 9px 49px;
+            text-decoration: none;
+            text-transform: uppercase;
+            &:hover{
+                @extend %btnHover;
+            }
+        }
+    }
+}
