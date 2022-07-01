@@ -449,3 +449,46 @@ body {
   top: 226px;
   right: 323px;
 }
+
+.footer {
+  padding-top: 123px;
+  padding-bottom: 79px;
+  background: #64ABF9;
+}
+.footer .footer-logo {
+  margin-bottom: 45px;
+}
+.footer .footer-social img {
+  margin-right: 25px;
+  cursor: pointer;
+}
+.footer .footer-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer .footer-number a {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 3px;
+  margin-bottom: 3px;
+}
+.footer .footer-number a:hover {
+  text-decoration: none;
+}
+.footer .footer-mail {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 400;
+}
+.footer .footer-mail:hover {
+  text-decoration: none;
+}
+.footer h2 {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 100px;
+  text-align: center;
+}
