@@ -23,6 +23,11 @@ ul[class],
 ol[class] {
   list-style: none;
 }
+img{
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
 a:hover{
     text-decoration: none;
 }
@@ -64,6 +69,9 @@ body{
     padding: 18px 0;
     font-family: 'Montserrat', sans-serif;
     .container{
+        .logo{
+            cursor: pointer;
+        }
         max-width: 1170px;
         .menu{
             display: flex;
@@ -228,11 +236,68 @@ body{
             border-bottom-left-radius: 10px;
             border-bottom-right-radius: 10px;
             margin-bottom: 10px;
-            p{
-                
-            }
+            
         }
     }
     
+}
+.block4{
+    background: url(../img/bg-block4.png);
+    padding: 123px 0;
+    .block4-title{
+        margin-bottom: 82px;
+        text-align: center;
+        h1{
+            color: #000000;
+            font-size: 32px;
+            font-weight: 800;
+        }
+    }
+    .owl-carousel{
+        .item{
+            border: solid 2px #67AEFC;
+            border-radius: 10px;
+            padding: 31px 48px;
+            .item-text{
+                h2{
+                    color: #000000;
+                    font-size: 21px;
+                    font-weight: 700;
+                }
+                p{
+                    font-size: 15px;
+                    color: #000000;
+                    font-weight: 400;
+                }
+            }
+        }
+        .item1{
+            padding: 50px 40px;
+        }  
+        .item2{
+            padding: 31px 40px;
+        }
+        .owl-nav{
+            text-align: center;
+            margin-top: 83px;
+            .owl-prev{
+                outline: none;
+                border: solid 2px #67AEFC;
+                border-radius: 15px;
+                margin-right: 30px;
+                i{
+                    padding: 22px 25px;
+                }
+            }
+            .owl-next{
+                outline: none;
+                border: solid 2px #67AEFC;
+                border-radius: 15px;
+                i{
+                    padding: 22px 25px;
+                }
+            }
+        }
+    }
 }
 
