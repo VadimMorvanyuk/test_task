@@ -41,7 +41,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.block6 .block6-text .block6Btn, .block2 .block2-text .btnBlock2, .header .container .menu .btnHeader {
+.block7 .inputs .btn-form, .block6 .block6-text .block6Btn, .block2 .block2-text .btnBlock2, .header .container .menu .btnHeader {
   background: #75E169;
   color: white;
   border-radius: 5px;
@@ -50,11 +50,12 @@ body {
   transition: 0.5s;
 }
 
-.block6 .block6-text .block6Btn:hover, .block2 .block2-text .btnBlock2:hover, .header .container .menu .btnHeader:hover {
+.block7 .inputs .btn-form:hover, .block6 .block6-text .block6Btn:hover, .block2 .block2-text .btnBlock2:hover, .header .container .menu .btnHeader:hover {
   background: #75E169;
   color: white;
   border: solid 2px #67AEFC;
   border-radius: 5px;
+  text-decoration: none;
   text-decoration: none;
 }
 
@@ -371,4 +372,80 @@ body {
 .block6 .block6-text .block6Btn {
   text-transform: uppercase;
   padding: 17px 63px;
+}
+.block7 {
+  position: relative;
+  padding-top: 180px;
+  padding-bottom: 120px;
+  background: #DAECFF;
+  text-align: center;
+}
+.block7 h1 {
+  color: #111111;
+  font-size: 32px;
+  font-weight: 800;
+}
+.block7 p {
+  color: #111111;
+  font-size: 18px;
+  font-weight: 400;
+  max-width: 479px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 27px;
+}
+.block7 .inputs {
+  max-width: 478px;
+  margin: 0 auto;
+}
+.block7 .inputs input {
+  padding: 14px 258px 19px 19px;
+  border: solid 1px #67AEFC;
+  border-radius: 10px;
+  margin-top: 20px;
+  outline: none;
+}
+.block7 .inputs input:focus {
+  border: solid 1px #4964ff;
+}
+.block7 .inputs .massenger:invalid {
+  border-color: red;
+  color: red;
+}
+.block7 .inputs .name:invalid {
+  border-color: red;
+  color: red;
+}
+.block7 .inputs .form_error {
+  color: red;
+  text-align: left;
+  font-size: 12px;
+  margin-top: 3px;
+  display: none;
+}
+.block7 .inputs input:invalid:not(:-moz-placeholder-shown) + .form_error {
+  display: block;
+}
+.block7 .inputs input:invalid:not(:-ms-input-placeholder) + .form_error {
+  display: block;
+}
+.block7 .inputs input:invalid:not(:placeholder-shown) + .form_error {
+  display: block;
+}
+.block7 .inputs .btn-form {
+  padding: 18px 94px;
+  display: inline-block;
+  margin-top: 30px;
+}
+.block7:before {
+  content: url(../img/phone.png);
+  position: absolute;
+  top: 226px;
+  left: 218px;
+}
+.block7:after {
+  content: url(../img/ball.png);
+  position: absolute;
+  top: 226px;
+  right: 323px;
 }

@@ -48,6 +48,7 @@ body{
     border: solid 2px #67AEFC;
     border-radius: 5px;
     text-decoration: none;
+    text-decoration: none;
 }
 %btnActive{
     background: #67AEFC;
@@ -397,6 +398,85 @@ body{
                 @extend %btnActive;
             }
         }
+    }
+}
+.block7{
+    position: relative;
+    padding-top: 180px;
+    padding-bottom: 120px;
+    background: #DAECFF;
+    text-align: center;
+    h1{
+        color: #111111;
+        font-size: 32px;
+        font-weight: 800;
+    }
+    p{
+        color: #111111;
+        font-size: 18px;
+        font-weight: 400;
+        max-width: 479px;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 27px;
+    }
+    .inputs{
+        max-width: 478px;
+        margin: 0 auto;
+        input{
+            padding: 14px 258px 19px 19px;
+            border: solid 1px #67AEFC;
+            border-radius: 10px;
+            margin-top: 20px;
+            outline: none;
+            &:focus{
+                border: solid 1px #4964ff;
+            }
+        }
+        .massenger{
+            &:invalid{
+                border-color: red;
+                color: red;
+            }
+        }
+        .name{
+            &:invalid{
+                border-color: red;
+                color: red;
+            }
+        }
+        .form_error{
+            color: red;
+            text-align: left;
+            font-size: 12px;
+            
+            margin-top: 3px;
+            display: none;
+        }
+        input:invalid:not(:placeholder-shown) + .form_error {
+            display: block;
+        }
+        .btn-form{
+            @extend %btnNormal;
+            padding: 18px 94px;
+            display: inline-block;
+            margin-top: 30px;
+            &:hover{
+                @extend %btnHover;
+            }
+        }
+    }
+    &:before{
+        content: url(../img/phone.png);
+        position: absolute;
+        top: 226px;
+        left: 218px;
+    }
+    &:after{
+        content: url(../img/ball.png);
+        position: absolute;
+        top: 226px;
+        right: 323px;
     }
 }
 
