@@ -178,6 +178,15 @@
     }
 }
 @media(max-width: 460px){
+    .block2{
+        .container{
+            .block2-text{
+                h1{
+                    font-size: 27px;
+                }
+            }
+        }
+    }
     .block4{
         .owl-carousel{
             .owl-nav.disabled{
